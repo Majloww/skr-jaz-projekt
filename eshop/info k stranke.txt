@@ -1,0 +1,71 @@
+zoznam, banner? oznacit kreativne
+
+
+
+
+
+
+
+
+1 hlavná stránka (index.html) a 3 podstránky (napr. contacts.html atď) a prepojenia v rámci navigácie,
+Web stránka musí byť responzívna,
+Môžete použiť buď čisto HTML/CSS/JS alebo HTML/CSS/JS + Bootstrap framework,
+Cesty k súborom musia byť relatívne,
+Štýly aj Javascript musia byť písané v samostatných súboroch,
+Používajte vhodnú kombináciu farieb,
+Pre tému použite vhodnú font-family,
+Obrázky musia byť v samostatnom priečinku (/img),
+V projekte používajte rôzne layouty,
+V projekte používajte komentáre pre lepšiu prehľadnosť kódu,
+Používajte meta značky (description, keywords, author),
+Skontrolujte si validitu každej stránky.
+_____
+Rôzne nadpisy (1b)
+
+Formátovanie (1b)
+
+Navigácia (4b)
+
+    Navigácia s minimálne 3 stránkami (Napr. Domov, O nás, Blog, Galéria, Kontakt,..)
+    Na mobiloch hamburger navigácia
+    Logo v navigácii
+    Navigácia viditeľná počas scrollovania  
+
+Footer (2b)
+
+    Niekoľko stĺpcov s informáciami o stránke
+    Copyright
+
+Formulár (5b)
+
+    Polia: Meno, Email, Textarea, Súhlas so spracovaním osobných údajov, Odoslať
+    Ošetrenie emailovej adresy
+    Súhlas so spracovaním osobných údajov
+    Redirect na thank you page
+    Validácia
+
+Obrázky (1b)
+
+    používajte obrázky z bezplatných zdrojov,
+    použite vhodné množstvo obrázkov na stránku.
+
+Tlačidlo s preklikom na inú stránku (1b) - <a> tag, ktorý je naštýlovaný ako button
+
+Odkaz na email a telefón (mailto: , tel: ) (1b)
+
+Zoznam (1b)
+
+Tabuľka (1b)
+
+Banner s textom (1b)
+
+Slideshow (Carousel) (1b)
+
+Akordeón (1b)
+
+Alert (1b)
+
+KREATÍVNE (3b)
+
+Toto sú kreatívne body. Môžete vytvoriť napríklad lightbox galériu, stránkovanie, popup, cookies lištu alebo čokoľvek, pri čom použijete Javascript.
+Pred jednotlivé elementy použite komentár <!-- kreatívny bod -->
