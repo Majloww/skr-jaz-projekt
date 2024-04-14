@@ -28,4 +28,5 @@ function checkForm() {
 
 function hidePopup() {
     document.getElementById('overlay').style.display = 'none';
+    window.location.href = 'main.php';
 }

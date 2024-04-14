@@ -4,6 +4,7 @@
 <head>
     <?php
     include "head.php";
+    include "dbconnect.php";
     ?>
 </head>
 
@@ -51,18 +52,18 @@
 
     <!--Rating - form-->
     <div class="container" id="review-cont">
-        <form>
+        <form method="post" action="review-writing.php">
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" required>
+                <input type="email" class="form-control" name="email" id="email" required>
             </div>
             <div class="form-group">
-                <label for="select">Country</label>
-                <select type="country" class="form-control" id="select">
-                    <option class="disabled">Select country</option>
-                    <option>Slovakia</option>
-                    <option>United Kingdom</option>
-                    <option>Czech Republic</option>
+                <label for="choice">Country</label>
+                <select type="country" class="form-control" id="choice" name="choice">
+                    <option class="disabled" value="0">Select country</option>
+                    <option value="1">Slovakia</option>
+                    <option value="2">United Kingdom</option>
+                    <option value="3">Czech Republic</option>
                 </select>
             </div>
             <br>
@@ -89,7 +90,7 @@
             </div>
             <div class="form-group">
                 <label for="comment">Comment</label>
-                <textarea class="form-control" id="comment" rows="5"></textarea>
+                <textarea class="form-control" id="comment" rows="5" name="review"></textarea>
             </div>
             <!-- Kreativny switch, js popup-->
             <label class="switch">
@@ -104,7 +105,7 @@
         <div id="overlay">
             <div id="popup">
                 <p>Thank you for your feedback!</p>
-                <button onclick="hidePopup()" class="btn btn-dark">Close</button>
+                <button type="submit" onclick="hidePopup()" class="btn btn-dark">Close</button>
             </div>
         </div>
     </div>
@@ -112,7 +113,7 @@
     <?php
     include "footer.php";
     ?>
-    
+
 </body>
 
 </html>
