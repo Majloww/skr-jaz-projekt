@@ -27,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: main.php");
         exit();
     } else {
-        echo "Wrong ID or password";
+        header("Location: login.php?error");
+        exit();
     }
 }

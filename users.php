@@ -18,6 +18,9 @@
         include "show-users.php";
         ?>
     </div>
+    <?php
+    include "footer.php";
+    ?>
 </body>
 
 </html>

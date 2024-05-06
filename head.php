@@ -1,5 +1,13 @@
 <?php
 session_start();
+
+$currentpage = $_SERVER['REQUEST_URI'];
+$allowed = array('/login.php', '/create-user.php');
+
+if (!isset($_SESSION['user_id']) && basename($_SERVER['PHP_SELF']) !== 'login.php') {
+    header("Location: login.php");
+    exit;
+}
 ?>
 
 <meta charset="UTF-8">

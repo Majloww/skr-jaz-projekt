@@ -1,7 +1,13 @@
 <!--Header-->
 
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><img src="shield-halved-solid.ico" alt="Home"></a>
+    <?php
+    if ($_SESSION["is_admin"] == 1) {
+        echo '<a class="navbar-brand" href="#"><img src="shield-halved-solid-green.png" alt="Home"></a>';
+    } else {
+        echo '<a class="navbar-brand" href="#"><img src="shield-halved-solid.ico" alt="Home"></a>';
+    }
+    ?>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

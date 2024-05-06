@@ -6,7 +6,7 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    Explore our quality products <a href="shop.php">here</a><br>
+                    Explore our high quality products <a href="shop.php">here</a><br>
                     Contact our <span style="color: red; font-weight: bold;">24/7</span> customer support: <a href="https://www.fbi.gov/contact-us">1-800-225-5324</a>
                 </div>
                 <div class="col-md-6">
