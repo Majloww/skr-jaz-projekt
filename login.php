@@ -25,6 +25,7 @@
                     <?php
                     if (isset($_GET['error'])) {
                         echo "<br><h2 style='color: red'; class='blink'>Wrong ID or password!</h2>";
+                        echo "<p>hint:11, 11</p>";
                     }
                     ?>
                 </form>

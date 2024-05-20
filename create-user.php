@@ -23,7 +23,7 @@
     <div class="container" id="main-cont">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <form action="db-create-user.php" method="post">
+                <form action="db-create-user.php" method="post"> <!--neda sa do action vo forme hodid function() -->
                     <h1>Create a new account</h1>
                     <label for="name">Name:</label><br>
                     <input class="form-control" type="text" id="name" name="name" required><br><br>
@@ -31,10 +31,17 @@
                     <label for="surname">Surname:</label><br>
                     <input class="form-control" type="text" id="surname" name="surname" required><br><br>
 
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+                    </div><br>
+
                     <label for="password">Password:</label><br>
                     <input class="form-control" type="password" id="password" name="password" required><br><br>
 
                     <button type="submit" class="btn btn-secondary btn-block">Submit</button>
+                    <hr>
+                    <p style="font-size: small;">An e-mail will be sent to your e-mail address containing your ID number and a confirmation of creation of your profile. Check your inbox or spam folder.</p>
                 </form>
             </div>
         </div>

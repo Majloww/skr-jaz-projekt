@@ -1,10 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "root"; //add localhost user and pass
-$password = "";
-$dbname = "ukf-eshop";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+include "dbconnect.php";
+$conn = dbconnect();
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());

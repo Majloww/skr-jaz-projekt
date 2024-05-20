@@ -17,10 +17,6 @@
     <div class="container" id="review-cont">
         <form method="post" action="review-writing.php">
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" name="email" id="email" required>
-            </div>
-            <div class="form-group">
                 <label for="choice">Country</label>
                 <select type="country" class="form-control" id="choice" name="choice">
                     <option class="disabled" value="0">Select country</option>

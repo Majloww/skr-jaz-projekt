@@ -16,6 +16,7 @@
     <div class="container" id="main-cont">
         <?php
         include "show-users.php";
+        show_users();
         ?>
     </div>
     <?php

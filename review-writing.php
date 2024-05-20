@@ -1,29 +1,19 @@
 <?php
-$servername = "localhost";
-$username = ""; //add localhost user and pass
-$password = "";
-$dbname = "ukf-eshop";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-//displays nothing if connected successfully
+session_start();
+include "dbconnect.php";
+$conn = dbconnect();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
+    $id = $_SESSION["user_id"];
     $choice = intval($_POST['choice']);
     $rating = 5;
     $review = $_POST['review'];
 
-
-
-    $sql = "INSERT INTO reviews (mail, countryid, rating, review) VALUES ('$email', '$choice', $rating, '$review')"; /*+'rating' lebo sa dojbli hviezdicky :((*/
+    $sql = "INSERT INTO reviews (user_id, countryid, rating, review) VALUES ($id, '$choice', $rating, '$review')"; /*furt nejdu tie hviezdy, ani v console.logu :((*/
 
     if ($conn->query($sql) === TRUE) {
         echo "Thank you for leaving a review!";
-        sleep(4);
+        sleep(2);
         header("Location: main.php");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
@@ -31,4 +21,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $conn->close();
-?>
