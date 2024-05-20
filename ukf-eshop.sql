@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hostiteľ: 127.0.0.1:3306
--- Čas generovania: Po 06.Máj 2024, 15:47
+-- Čas generovania: Po 20.Máj 2024, 21:58
 -- Verzia serveru: 5.7.36
 -- Verzia PHP: 7.4.26
 
@@ -30,21 +30,21 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `reviews`;
 CREATE TABLE IF NOT EXISTS `reviews` (
   `rev-id` int(11) NOT NULL AUTO_INCREMENT,
-  `mail` varchar(100) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `countryid` int(2) NOT NULL,
   `rating` int(11) NOT NULL,
   `review` varchar(100) NOT NULL,
   PRIMARY KEY (`rev-id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 --
 -- Sťahujem dáta pre tabuľku `reviews`
 --
 
-INSERT INTO `reviews` (`rev-id`, `mail`, `countryid`, `rating`, `review`) VALUES
-(11, 'dasdasd@gmail.com', 3, 5, 'dsadasda'),
-(10, 'dasdasd@gmail.com', 3, 5, 'blablabla'),
-(9, 'abcd@gmail.com', 2, 5, 'Good job');
+INSERT INTO `reviews` (`rev-id`, `user_id`, `countryid`, `rating`, `review`) VALUES
+(12, 11, 1, 5, 'gsddsdfggasdrg'),
+(13, 11, 1, 5, 'safsgsfhdhd'),
+(14, 11, 0, 5, 'dsadasdasd');
 
 -- --------------------------------------------------------
 
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `pass` varchar(20) NOT NULL,
   `admin` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 --
 -- Sťahujem dáta pre tabuľku `users`
@@ -73,6 +73,7 @@ INSERT INTO `users` (`user_id`, `name`, `surname`, `pass`, `admin`) VALUES
 (8, 'test1', 'test1', 'test', NULL),
 (7, 'asdad', 'asdsafjsdnk', 'fadfd', 0),
 (9, 'test2', 'test2', 'test', NULL),
+(12, 'Anton', 'Antonov', '1234', NULL),
 (11, '11', '11', '11', 1);
 COMMIT;
 
