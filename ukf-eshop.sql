@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hostiteľ: 127.0.0.1:3306
--- Čas generovania: Po 20.Máj 2024, 21:58
+-- Čas generovania: St 22.Máj 2024, 17:48
 -- Verzia serveru: 5.7.36
 -- Verzia PHP: 7.4.26
 
@@ -20,6 +20,37 @@ SET time_zone = "+00:00";
 --
 -- Databáza: `ukf-eshop`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Štruktúra tabuľky pre tabuľku `products`
+--
+
+DROP TABLE IF EXISTS `products`;
+CREATE TABLE IF NOT EXISTS `products` (
+  `product_id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(50) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `description` varchar(300) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  PRIMARY KEY (`product_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+
+--
+-- Sťahujem dáta pre tabuľku `products`
+--
+
+INSERT INTO `products` (`product_id`, `title`, `quantity`, `description`, `price`) VALUES
+(1, 'Camera', 10, 'Security camera model 2020', '239.99'),
+(2, 'Motion sensor', 25, 'Infrared motion sensor', '45.00'),
+(3, 'Control panel', 21, 'Control panel that monitors your cameras', '129.99'),
+(4, '1st gen. CCTV camera', 40, 'CCTV camera 1st gen', '49.99'),
+(5, '2nd gen. CCTV camera', 68, 'CCTV camera, upgraded model', '69.99'),
+(6, 'Ball head security camera', 42, 'Security camera with ball head', '59.99'),
+(7, 'Button security panel', 15, 'Security panel with buttons', '40.00'),
+(8, 'Fingerprint padlock', 166, 'Padlock with fingerprint reader', '26.99'),
+(9, 'VPN Service', 10000, 'VPN Service', '25.50');
 
 -- --------------------------------------------------------
 
