@@ -23,22 +23,34 @@
     <div class="container" id="main-cont">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <form action="db-create-user.php" method="post"> <!--neda sa do action vo forme hodid function() -->
+                <form action="db-create-user.php" method="post">
                     <h1>Create a new account</h1>
-                    <label for="name">Name:</label><br>
-                    <input class="form-control" type="text" id="name" name="name" required><br><br>
-
-                    <label for="surname">Surname:</label><br>
-                    <input class="form-control" type="text" id="surname" name="surname" required><br><br>
-
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email" id="email" required>
-                    </div><br>
-
-                    <label for="password">Password:</label><br>
-                    <input class="form-control" type="password" id="password" name="password" required><br><br>
-
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <?php
+                    if (isset($_GET['error'])) {
+                        echo "<br>
+                        <h2 style='color: red' ; class='blink'>Username is already taken!</h2>";
+                    }
+                    ?>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Surname:</label>
+                        <input type="text" class="form-control" id="surname" name="surname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
                     <button type="submit" class="btn btn-secondary btn-block">Submit</button>
                     <hr>
                     <p style="font-size: small;">An e-mail will be sent to your e-mail address containing your ID number and a confirmation of creation of your profile. Check your inbox or spam folder.</p>

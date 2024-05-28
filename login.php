@@ -13,8 +13,8 @@
             <div class="col-md-6">
                 <form action="check-login.php" method="post">
                     <div class="form-group">
-                        <label for="id">ID:</label><br>
-                        <input class="form-control" type="text" name="id" id="id" required><br>
+                        <label for="username">Username:</label>
+                        <input class="form-control" type="text" name="username" id="username" required>
                     </div>
                     <div class="form-group">
                         <label for="pass">Password:</label><br>

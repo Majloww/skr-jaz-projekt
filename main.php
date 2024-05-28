@@ -20,16 +20,16 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" id="carousel-img" src="camera4.jpg" alt="First slide">
+                    <img class="d-block w-100" id="carousel-img" src="images/2.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" id="carousel-img" src="motion-sensor.jpg" alt="Second slide">
+                    <img class="d-block w-100" id="carousel-img" src="images/3.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" id="carousel-img" src="control-panel.jpg" alt="Third slide">
+                    <img class="d-block w-100" id="carousel-img" src="images/7.jpg" alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" id="carousel-img" src="panel2.jpg" alt="Fourth slide">
+                    <img class="d-block w-100" id="carousel-img" src="images/9.jpg" alt="Fourth slide">
                 </div>
 
             </div>
@@ -65,7 +65,7 @@
                 </p>
             </div>
             <div class="col-md-6">
-                <img src="camera.jpg" alt="banner" class="img-fluid">
+                <img src="images/5.jpg" alt="banner" class="img-fluid">
             </div>
         </div>
         <div class="row">
